@@ -13,7 +13,6 @@ A fully responsive **Netflix Clone** built using HTML and CSS. This project repl
 - [💻 Technologies Used](#technologies-used)
 - [⚙️ Installation](#installation)
 - [🚀 Usage](#usage)
-- [📷 Screenshots](#screenshots)
 - [🤝 Contributing](#contributing)
 - [📄 License](#license)
 
@@ -53,10 +52,6 @@ This Netflix Clone aims to provide a simplified version of the Netflix homepage.
 ## 🚀 Usage
 
 Simply open the `index.html` file in your preferred web browser, and the Netflix Clone will render as a fully responsive webpage. You can adjust the browser size to see the responsive behavior across devices.
-
-## 📷 Screenshots
-
-![Netflix Clone Screenshot](./screenshots/homepage.png)
 
 ## 🤝 Contributing
 
