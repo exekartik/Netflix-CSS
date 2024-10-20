@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+.main {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering items horizontally */
+    background-color: rgba(0, 0, 0, 0.44); /* Optional semi-transparent black background */
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    background-image: url('assets/images/bg.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    filter: brightness(0.5); /* Only apply brightness filter to the background */
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+nav span img {
+    width: 150px;
+    z-index: 1; /* Ensure the logo stays on top */
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.English {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.hero {
+    width: 80%;
+    top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    font-family: "Martel Sans", sans-serif;
+    gap: 15px;
+    padding: 20px 0; /* Added padding for top and bottom */
+}
+
+.hero > :first-child {
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+}
+
+.hero > :nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero > :last-child {
+    font-weight: 550;
+    font-size: 20px;
+    text-align: center;
+}
+
+#EmailIDbtn {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#EmailID {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    /* background-color: rgb(77, 75, 75); */
+    background: transparent;
+    border: 1px solid white;
+    
+    /* border: none; */
+    color: white;
+
+}
+
+.separation {
+    height: 7px; /* Height of the line */
+    background-color: rgb(62, 62, 62);
+    width: 100%; /* Full width */
+    position: relative;
+    z-index: 20;
+    margin-top: 0; /* No top margin needed */
+}
+#EmailID::placeholder {
+    color: white; /* Change placeholder text color to white */
+}
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
